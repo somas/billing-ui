@@ -6,7 +6,6 @@ import {PaymentSchedulesList} from "./paymentSchedulesList";
 @Component({
     selector: 'my-app',
     template: `
-        <h1>Billing-Admin</h1>
         <router-outlet></router-outlet>
     `,
     directives: [ROUTER_DIRECTIVES]
@@ -14,7 +13,7 @@ import {PaymentSchedulesList} from "./paymentSchedulesList";
 
 @RouteConfig([
     { path: '/', as: 'Home', component: PaymentDetailsList, useAsDefault: true},
-    { path: 'payment-details/:id/schedule', as: 'Schedule', component: PaymentSchedulesList},
+    { path: 'payment-details/:id/schedule', as: 'Schedule', component: PaymentSchedulesList}
 ])
 export class AppComponent {
 

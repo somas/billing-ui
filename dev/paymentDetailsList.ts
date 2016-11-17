@@ -5,7 +5,8 @@ import {ROUTER_DIRECTIVES} from "angular2/router";
 
 @Component({
     selector : 'payment-details-list',
-    template : `List of Payment Details
+    template : `
+    <h3 class="page-header">List of Payment Details</h3>
        <table class="table">
           <thead class="thead-inverse">
             <tr>
@@ -57,7 +58,7 @@ export class PaymentDetailsList {
     ngOnInit() {
         this._paymentDetailsService.getPaymentDetails().subscribe(
             data => this.paymentDetails = data,
-            error => this.paymentDetails = error,
+            error => alert(error),
             () => console.log('finished')
         );
     }

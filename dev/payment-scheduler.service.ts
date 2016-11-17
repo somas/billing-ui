@@ -9,7 +9,7 @@ export class PaymentScheduleService {
     getPaymentScheduler(id: string) {
         let headers      = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
         let options       = new RequestOptions({ headers: headers });
-        return this._http.get("http://localhost:9100/billing-scheduler/payment/details/" + id, options)
+        return this._http.get("http://localhost:9100/billing-scheduler/payment/details/" + id + "/schedule", options)
             .map(res => res.json())
     }
 }
