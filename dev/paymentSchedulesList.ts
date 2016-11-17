@@ -9,6 +9,7 @@ import {Observable} from "rxjs/Rx";
 @Component({
     selector : 'scheduler-ui',
     template : `
+    <br><br><br><br><br>
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="col-sm-4 col-md-4 sidebar">

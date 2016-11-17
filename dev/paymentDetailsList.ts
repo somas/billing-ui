@@ -6,7 +6,8 @@ import {ROUTER_DIRECTIVES} from "angular2/router";
 @Component({
     selector : 'payment-details-list',
     template : `
-    <h3 class="page-header">List of Payment Details</h3>
+<br><br><br><br><br>
+    <h4 class="page-header">List of Payment Details</h4>
        <table class="table">
           <thead class="thead-inverse">
             <tr>
