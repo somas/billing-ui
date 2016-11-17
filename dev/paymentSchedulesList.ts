@@ -132,7 +132,7 @@ export class PaymentSchedulesList {
             console.log(this.isFirst);
             this.isFirst = true;
 
-            let timer = Observable.timer(2000,10000);
+            let timer = Observable.timer(2000,2000);
             timer.subscribe(t => this.ngOnInit());
         }
 
